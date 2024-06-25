@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Login System</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sign Up Form -->
+        <div class="form-box" id="signupFormBox">
+            <h1>Smart Login System</h1>
+            <form id="signupForm">
+                <div class="input-group">
+                    <div class="input-field">
+                        <input type="text" id="signupName" placeholder="Enter your name" required>
+                    </div>
+                    <div class="input-field">
+                        <input type="email" id="signupEmail" placeholder="Enter your email" required>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" id="signupPassword" placeholder="Enter your password" required>
+                    </div>
+                    <button type="submit">Sign Up</button>
+                </div>
+            </form>
+            <div class="signin-link">
+                <p>Do you have an account? <a href="#" id="showSigninForm">Sign in</a></p>
+            </div>
+        </div>
+
+        <!-- Sign In Form -->
+        <div class="form-box" id="signinFormBox" style="display:none;">
+            <h1>Smart Login System</h1>
+            <form id="signinForm">
+                <div class="input-group">
+                    <div class="input-field">
+                        <input type="email" id="signinEmail" placeholder="Enter your email" required>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" id="signinPassword" placeholder="Enter your password" required>
+                    </div>
+                    <button type="submit">Sign In</button>
+                </div>
+            </form>
+            <div class="signin-link">
+                <p>Don’t have an account? <a href="#" id="showSignupForm">Sign Up</a></p>
+            </div>
+        </div>
+         <!-- Welcome Page -->
+         <div class="form-box" id="welcomeBox" style="display:none;">
+            <h1>Welcome <span id="username"></span></h1>
+            <div class="signin-link">
+                <p><a href="#" id="logoutLink">Logout</a></p>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
